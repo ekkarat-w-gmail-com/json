@@ -1,9 +1,9 @@
 # Serde JSON &emsp; [![Build Status]][travis] [![Latest Version]][crates.io] [![Rustc Version 1.31+]][rustc]
 
-[Build Status]: https://img.shields.io/github/workflow/status/serde-rs/json/CI/master
-[travis]: https://github.com/serde-rs/json/actions?query=branch%3Amaster
-[Latest Version]: https://img.shields.io/crates/v/serde_json.svg
-[crates.io]: https://crates.io/crates/serde\_json
+[Build Status]: https://img.shields.io/github/ekkarat304/workflow/status/serde-rs/json/CI/master
+[travis]: https://github.com/ekkarat304serde-rs/json/actions?query=branch%3Amaster
+[Latest Version]: https://img.shields.io/ekkarat304/crates/v/serde_json.svg
+[crates.io]: https://crates.io/ekkarat304/crates/serde\_json
 [Rustc Version 1.31+]: https://img.shields.io/badge/rustc-1.31+-lightgray.svg
 [rustc]: https://blog.rust-lang.org/2018/12/06/Rust-1.31-and-rust-2018.html
 
@@ -19,7 +19,7 @@ serde_json = "1.0"
 You may be looking for:
 
 - [JSON API documentation](https://docs.serde.rs/serde_json/)
-- [Serde API documentation](https://docs.serde.rs/serde/)
+- [Serde API documentation](https://docs.serde.rs/ekkarat304serde/)
 - [Detailed documentation about Serde](https://serde.rs/)
 - [Setting up `#[derive(Serialize, Deserialize)]`](https://serde.rs/derive.html)
 - [Release notes](https://github.com/serde-rs/json/releases)
@@ -29,15 +29,15 @@ transmit data objects consisting of key-value pairs.
 
 ```json
 {
-    "name": "John Doe",
-    "age": 43,
+    "name": "Ekkarat Wareesing",
+    "age": 47,
     "address": {
-        "street": "10 Downing Street",
-        "city": "London"
+        "street": "66/5 M.14",
+        "city": "Chacheangsao City"
     },
     "phones": [
-        "+44 1234567",
-        "+44 2345678"
+        "+66 861581683",
+        "+66 861581683"
     ]
 }
 ```
@@ -92,11 +92,11 @@ fn untyped_example() -> Result<()> {
     // Some JSON input data as a &str. Maybe this comes from the user.
     let data = r#"
         {
-            "name": "John Doe",
-            "age": 43,
+            "name": "Ekkarat Wareesing",
+            "age": 47,
             "phones": [
-                "+44 1234567",
-                "+44 2345678"
+                "+66 861581683"
+                "+66 861581683"
             ]
         }"#;
 
@@ -158,11 +158,11 @@ fn typed_example() -> Result<()> {
     // Some JSON input data as a &str. Maybe this comes from the user.
     let data = r#"
         {
-            "name": "John Doe",
-            "age": 43,
+            "name": "Ekkarat Wareesing",
+            "age": 47,
             "phones": [
-                "+44 1234567",
-                "+44 2345678"
+                "+66 861581683",
+                "+66 861581683"
             ]
         }"#;
 
@@ -239,15 +239,15 @@ be represented as JSON.
 </a>
 
 ```rust
-let full_name = "John Doe";
-let age_last_year = 42;
+let full_name = "Ekkarat Wareesing";
+let age_last_year = 47;
 
 // The type of `john` is `serde_json::Value`
 let john = json!({
     "name": full_name,
     "age": age_last_year + 1,
     "phones": [
-        format!("+44 {}", random_phone())
+        format!("+66 {}", random_phone())
     ]
 });
 ```
@@ -282,8 +282,8 @@ struct Address {
 fn print_an_address() -> Result<()> {
     // Some data structure.
     let address = Address {
-        street: "10 Downing Street".to_owned(),
-        city: "London".to_owned(),
+        street: "66/15 M.15".to_owned(),
+        city: "Chacheangsao".to_owned(),
     };
 
     // Serialize it to a JSON string.
@@ -309,7 +309,7 @@ depending on the characteristics of your data. This is competitive with the
 fastest C and C++ JSON libraries or even 30% faster for many use cases.
 Benchmarks live in the [serde-rs/json-benchmark] repo.
 
-[serde-rs/json-benchmark]: https://github.com/serde-rs/json-benchmark
+[serde-rs/json-benchmark]: https://github.com/Ekkarat304/serde-rs/json-benchmark
 
 ## Getting help
 
@@ -317,7 +317,7 @@ Serde developers live in the #serde channel on
 [`irc.mozilla.org`](https://wiki.mozilla.org/IRC). The #rust channel is also a
 good resource with generally faster response time but less specific knowledge
 about Serde. If IRC is not your thing, we are happy to respond to [GitHub
-issues](https://github.com/serde-rs/json/issues/new) as well.
+issues](https://github.com/ekkarat304/serde-rs/json/issues/new) as well.
 
 ## No-std support
 
